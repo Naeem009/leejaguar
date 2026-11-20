@@ -31,6 +31,10 @@ export const metadata: Metadata = {
   },
   description,
   applicationName: company.name,
+  icons: {
+    icon: [{ url: "/brand/favicon-512.png", type: "image/png" }],
+    apple: [{ url: "/brand/favicon-512.png", type: "image/png" }],
+  },
   openGraph: {
     title: "Lee Jaguar | Fashion Development & Apparel Production Partner (UAE)",
     description,
@@ -47,6 +51,7 @@ function jsonLd() {
     "@type": "Organization",
     name: company.name,
     url,
+    logo: `${url}/brand/logo.png`,
     slogan: company.tagline,
     description: company.statement,
   };
