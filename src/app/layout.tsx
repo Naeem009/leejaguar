@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   description,
   applicationName: company.name,
   icons: {
-    icon: [{ url: "/brand/favicon-512.png", type: "image/png" }],
+    icon: [{ url: "/brand/favicon.png", type: "image/png" }],
     apple: [{ url: "/brand/favicon-512.png", type: "image/png" }],
   },
   openGraph: {
