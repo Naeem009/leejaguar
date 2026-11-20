@@ -1,0 +1,18 @@
+---
+description: Lee Jaguar B2B website rules
+alwaysApply: true
+---
+- Source of truth is LEE_JAGUAR_DEVELOPMENT_SPEC.md. Follow it exactly; ask before deviating.
+- This is a B2B corporate marketing site, NOT e-commerce. Never add cart, checkout, prices, accounts.
+- Never create or mention "Corporate & Institutional", uniforms, workwear or promotional merchandise.
+- Colours: only espresso #352720, sienna #A9573D, mineral #7895A3, stone #C9B8A5, cream #F2ECE3.
+- NEVER use white or #FFFFFF for text or any colour. Every text element must set an explicit dark colour (default espresso). No dark mode.
+- Never place text directly on photographs; use a cream/stone panel.
+- Fonts: Playfair Display (headings), Montserrat (body/nav 500/buttons 600) via next/font.
+- Buttons: square (max 2px radius), Espresso text always, never text on a sienna fill.
+- All copy lives in src/content/*.ts. Do not invent copy, contact details, clients, certifications, capacity or statistics. Use TODO(content) markers instead.
+- Images: next/image, WebP, local files in public/images, descriptive alt, never reuse an image across sections, never hotlink.
+- Animations subtle only; respect prefers-reduced-motion.
+- TypeScript strict, no `any`. Components small, typed, accessible (semantic HTML, focus states).
+- Run `npm run check` before declaring any task complete.
+- Build in phases per LEE_JAGUAR_DEVELOPMENT_SPEC.md Section 18; do not jump ahead.

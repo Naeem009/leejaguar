@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+@theme {
+  --color-*: initial;
+  --color-transparent: transparent;
+  --color-current: currentColor;
+  --color-espresso: #352720;
+  --color-sienna: #a9573d;
+  --color-mineral: #7895a3;
+  --color-stone: #c9b8a5;
+  --color-cream: #f2ece3;
+  --font-display: var(--font-playfair), Georgia, serif;
+  --font-sans: var(--font-montserrat), system-ui, sans-serif;
+  --max-width-content: 1200px;
+  --max-width-wide: 1360px;
+}
+
+:root {
+  --text-h1: clamp(2.5rem, 6vw, 5rem);
+  --text-h2: clamp(1.75rem, 3.4vw, 2.75rem);
+  --text-h3: clamp(1.25rem, 2vw, 1.5rem);
+  --text-body: 1.0625rem;
+  --text-small: 0.875rem;
+  color-scheme: light;
+}
+
+html {
+  scroll-padding-top: 5.5rem;
+  background: #f2ece3;
+}
+
+body {
+  color: #352720;
+  background: #f2ece3;
+  font-family: var(--font-montserrat), system-ui, sans-serif;
+  font-size: var(--text-body);
+  line-height: 1.7;
+  min-height: 100%;
+}
+
+::selection {
+  background: #c9b8a5;
+  color: #352720;
+}
+
+button,
+input,
+textarea,
+select {
+  color: #352720;
+  font-family: inherit;
+}
+
+::placeholder {
+  color: rgb(53 39 32 / 0.6);
+}
+
+input,
+textarea,
+select {
+  background: #f2ece3;
+  border: 1px solid #352720;
+  border-radius: 2px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #a9573d;
+  outline: 2px solid #a9573d;
+  outline-offset: 2px;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-text-fill-color: #352720;
+  caret-color: #352720;
+  box-shadow: 0 0 0 1000px #f2ece3 inset;
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 2px solid #a9573d;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
