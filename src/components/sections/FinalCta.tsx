@@ -9,10 +9,10 @@ export function FinalCta() {
 
   return (
     <section id="start" className="border-y border-stone bg-cream text-espresso">
-      <div className="relative mx-auto aspect-[21/9] w-full max-w-wide overflow-hidden">
+      <div className="relative aspect-[21/9] w-full overflow-hidden">
         <SiteImage image={images.ctaBand} sizes="100vw" />
       </div>
-      <Container className="py-[clamp(4rem,9vw,7rem)]">
+      <Container className="py-[clamp(3.25rem,6vw,5.5rem)]">
         <h2 className="max-w-[14ch] font-display text-[length:var(--text-h2)] font-medium uppercase leading-[1.05] tracking-[-0.01em] text-espresso">
           {copy.title}
         </h2>

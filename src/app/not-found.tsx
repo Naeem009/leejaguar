@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function NotFound() {
   const copy = pageCopy.notFound;
   return (
-    <div className="mx-auto flex min-h-[60vh] w-full max-w-content flex-col justify-center px-5 py-24 text-espresso md:px-8">
+    <div className="flex min-h-[60vh] w-full flex-col justify-center px-5 py-24 text-espresso md:px-8 lg:px-12">
       <Eyebrow>{copy.eyebrow}</Eyebrow>
       <h1 className="font-display text-[length:var(--text-h2)] font-medium uppercase leading-[1.05] text-espresso">
         {copy.title}

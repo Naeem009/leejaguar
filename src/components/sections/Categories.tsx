@@ -12,7 +12,7 @@ export function Categories() {
   const copy = homeCopy.categories;
 
   return (
-    <section id="categories" className="bg-cream py-[clamp(4rem,9vw,8rem)] text-espresso">
+    <section id="categories" className="bg-cream py-[clamp(3.25rem,6vw,5.5rem)] text-espresso">
       <Container wide>
         <SectionHeading title={copy.title} lead={copy.lead} />
         <ul className="mt-14 grid grid-cols-1 gap-x-6 gap-y-12 min-[480px]:grid-cols-2 lg:grid-cols-3">

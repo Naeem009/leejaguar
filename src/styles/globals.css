@@ -27,6 +27,7 @@
 html {
   scroll-padding-top: 5.5rem;
   background: #f2ece3;
+  overflow-x: clip;
 }
 
 body {

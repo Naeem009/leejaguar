@@ -27,7 +27,7 @@ export const MobileMenu = forwardRef<HTMLDivElement, MobileMenuProps>(function M
       aria-label="Navigation"
       className="fixed inset-0 z-40 overflow-y-auto bg-cream px-6 pb-12 pt-24 text-espresso lg:hidden"
     >
-      <nav aria-label="Mobile" className="mx-auto flex min-h-[calc(100%-1rem)] w-full max-w-content flex-col">
+      <nav aria-label="Mobile" className="flex min-h-[calc(100%-1rem)] w-full flex-col">
         <ul className="flex flex-col gap-2">
           {navItems.map((item) => {
             const active = item.href === "/" ? pathname === "/" : pathname === item.href;

@@ -22,8 +22,8 @@ export default function FashionRetailPage() {
           <p key={paragraph}>{paragraph}</p>
         ))}
       </PageHero>
-      <section className="bg-cream py-[clamp(4rem,9vw,8rem)] text-espresso">
-        <div className="mx-auto w-full max-w-content px-5 md:px-8">
+      <section className="bg-cream py-[clamp(3.25rem,6vw,5.5rem)] text-espresso">
+        <div className="w-full px-5 md:px-8 lg:px-12">
           <h2 className="font-display text-[length:var(--text-h2)] font-medium uppercase leading-[1.05] text-espresso">
             {copy.audienceTitle}
           </h2>

@@ -98,7 +98,7 @@ export function Header() {
         scrolled ? "h-[68px] border-stone" : "h-20 border-transparent"
       }`}
     >
-      <div className="mx-auto flex h-full w-full max-w-wide items-center justify-between gap-4 px-5 md:px-8">
+      <div className="flex h-full w-full items-center justify-between gap-4 px-5 md:px-8 lg:px-12">
         <Logo variant="mark" className="inline-flex lg:hidden" />
         <Logo className="hidden lg:inline-flex" />
         <nav aria-label="Primary" className="hidden items-center gap-4 lg:flex xl:gap-6">

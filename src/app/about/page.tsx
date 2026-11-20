@@ -24,7 +24,7 @@ export default function AboutPage() {
         <p className="border border-stone px-4 py-3">{pageCopy.about.todo}</p>
       </PageHero>
       <section className="bg-cream py-[clamp(3rem,7vw,5rem)] text-espresso">
-        <div className="mx-auto grid w-full max-w-wide items-center gap-10 px-5 md:px-8 lg:grid-cols-2">
+        <div className="grid w-full items-center gap-10 px-5 md:px-8 lg:grid-cols-2 lg:px-12">
           <div className="relative aspect-[4/5] overflow-hidden">
             <SiteImage image={images.aboutMain} sizes="(min-width: 1024px) 45vw, 100vw" />
           </div>

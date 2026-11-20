@@ -15,31 +15,31 @@ export function Hero() {
 
   return (
     <section id="hero" className="bg-cream text-espresso">
-      <div className="grid min-h-[80vh] lg:min-h-[88vh] lg:grid-cols-12">
-        <div className="flex items-center lg:col-span-5">
-          <div className="w-full px-5 py-14 md:px-8 lg:py-20 lg:pr-8 xl:pl-[max(2rem,calc((100vw-1360px)/2+2rem))]">
-            <Eyebrow>{copy.eyebrow}</Eyebrow>
-            <h1 className="font-display text-[length:var(--text-h1)] font-medium uppercase leading-[0.92] tracking-[-0.01em] text-espresso">
+      <div className="grid lg:min-h-[88vh] lg:grid-cols-12">
+        <div className="flex items-center bg-espresso text-cream lg:col-span-5">
+          <div className="w-full px-5 py-14 md:px-8 lg:px-12 lg:py-16">
+            <Eyebrow tone="cream">{copy.eyebrow}</Eyebrow>
+            <h1 className="font-display text-[length:var(--text-h1)] font-medium uppercase leading-[0.92] tracking-[-0.01em] text-cream">
               {copy.title.map((line) => (
                 <span key={line} className="block">
                   {line}
                 </span>
               ))}
             </h1>
-            <p className="mt-5 font-display text-[clamp(1.25rem,2vw,1.6rem)] italic leading-snug text-espresso">
+            <p className="mt-5 font-display text-[clamp(1.25rem,2vw,1.6rem)] italic leading-snug text-cream">
               {copy.tagline}
             </p>
             <p className="mt-6 max-w-[18em] font-display text-[clamp(1.5rem,2.4vw,2rem)] font-medium uppercase italic leading-[1.15] tracking-[-0.01em] text-sienna">
               {copy.supporting}
             </p>
-            <div className="mt-6 max-w-[46ch] space-y-4 text-base leading-[1.7] text-espresso">
+            <div className="mt-6 max-w-[46ch] space-y-4 text-base leading-[1.7] text-cream">
               {copy.paragraphs.map((paragraph) => (
                 <p key={paragraph}>{paragraph}</p>
               ))}
             </div>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <Button href={copy.primary.href}>{copy.primary.label}</Button>
-              <Button href={copy.secondary.href} variant="secondary">
+              <Button href={copy.secondary.href} variant="secondary" tone="cream">
                 {copy.secondary.label}
               </Button>
             </div>

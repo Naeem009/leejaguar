@@ -21,7 +21,7 @@ export default function ContactPage() {
         <p>{copy.body}</p>
       </PageHero>
       <section className="bg-cream py-[clamp(3rem,7vw,5.5rem)] text-espresso">
-        <div className={`mx-auto grid w-full max-w-wide gap-12 px-5 md:px-8 ${showDetails ? "lg:grid-cols-[minmax(0,1.6fr)_minmax(16rem,0.7fr)]" : ""}`}>
+        <div className={`grid w-full gap-12 px-5 md:px-8 lg:px-12 ${showDetails ? "lg:grid-cols-[minmax(0,1.6fr)_minmax(16rem,0.7fr)]" : ""}`}>
           <EnquiryForm />
           {showDetails ? (
             <aside className="h-fit border-t border-stone pt-6 text-espresso lg:border-l lg:border-t-0 lg:pl-10 lg:pt-0">

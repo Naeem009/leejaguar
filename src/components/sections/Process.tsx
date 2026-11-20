@@ -11,7 +11,7 @@ export function Process() {
   const copy = homeCopy.process;
 
   return (
-    <section id="process" className="bg-cream py-[clamp(4rem,9vw,8rem)] text-espresso">
+    <section id="process" className="bg-cream py-[clamp(3.25rem,6vw,5.5rem)] text-espresso">
       <Container wide>
         <SectionHeading title={copy.title} lead={copy.lead} />
         <ol className="relative mt-14 flex flex-col gap-12 md:hidden">

@@ -8,7 +8,7 @@ export function Intro() {
   const copy = homeCopy.intro;
 
   return (
-    <section id="introduction" className="bg-cream py-[clamp(4rem,9vw,8rem)] text-espresso">
+    <section id="introduction" className="bg-cream py-[clamp(3.25rem,6vw,5.5rem)] text-espresso">
       <Container>
         <div className="grid items-center gap-10 lg:grid-cols-12 lg:gap-12">
           <Reveal variant="image" className="relative aspect-[4/5] overflow-hidden lg:col-span-5">

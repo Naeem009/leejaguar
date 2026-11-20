@@ -29,7 +29,7 @@ export default function ServicesPage() {
           const reversed = index % 2 === 1;
           return (
             <article key={stage.slug} id={stage.slug} className="scroll-mt-24 border-b border-stone">
-              <div className="mx-auto grid w-full max-w-wide items-center gap-8 px-5 py-[clamp(3rem,7vw,5.5rem)] md:px-8 lg:grid-cols-2 lg:gap-16">
+              <div className="grid w-full items-center gap-8 px-5 py-[clamp(3rem,6vw,5rem)] md:px-8 lg:grid-cols-2 lg:gap-16 lg:px-12">
                 <div className={`relative aspect-[4/5] overflow-hidden ${reversed ? "lg:order-2" : ""}`}>
                   <SiteImage image={photo} sizes="(min-width: 1024px) 45vw, 100vw" />
                 </div>

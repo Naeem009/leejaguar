@@ -31,7 +31,7 @@ export function Footer() {
   return (
     <footer className="bg-stone text-espresso">
       <div
-        className={`mx-auto grid w-full max-w-wide gap-12 px-5 py-16 md:grid-cols-2 md:px-8 ${
+        className={`grid w-full gap-12 px-5 py-16 md:grid-cols-2 md:px-8 lg:px-12 ${
           showContact ? "lg:grid-cols-4" : "lg:grid-cols-3"
         }`}
       >
@@ -106,7 +106,7 @@ export function Footer() {
         ) : null}
       </div>
       <div className="border-t border-espresso/20">
-        <p className="mx-auto w-full max-w-wide px-5 py-5 text-base text-espresso md:px-8">
+        <p className="w-full px-5 py-5 text-base text-espresso md:px-8 lg:px-12">
           © 2026 Lee Jaguar. All Rights Reserved.
         </p>
       </div>
