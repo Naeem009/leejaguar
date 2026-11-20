@@ -36,10 +36,21 @@ function present(value: string | undefined) {
 }
 
 const officeAddress = "401-05 GAL BUSINESS CENTER GALADARI BUILDING 16 DUBAI PRODUCTION CITY, DUBAI";
+const officeEmail = "info@jaguartextiles.com";
+const officeWhatsapp = "+971 50 936 1747";
+
+function whatsappLink(display: string) {
+  const digits = display.replace(/\D/g, "");
+  return digits ? `https://wa.me/${digits}` : "";
+}
+
+const whatsapp = present(process.env.NEXT_PUBLIC_CONTACT_WHATSAPP) || officeWhatsapp;
 
 export const contactDetails = {
-  email: present(process.env.NEXT_PUBLIC_CONTACT_EMAIL),
+  email: present(process.env.NEXT_PUBLIC_CONTACT_EMAIL) || officeEmail,
   phone: present(process.env.NEXT_PUBLIC_CONTACT_PHONE),
+  whatsapp,
+  whatsappHref: whatsappLink(whatsapp),
   address: present(process.env.NEXT_PUBLIC_CONTACT_ADDRESS) || officeAddress,
   linkedin: present(process.env.NEXT_PUBLIC_SOCIAL_LINKEDIN),
   instagram: present(process.env.NEXT_PUBLIC_SOCIAL_INSTAGRAM),

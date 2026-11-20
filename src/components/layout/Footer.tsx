@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { SVGProps } from "react";
+import { WhatsAppLink } from "@/components/contact/WhatsAppLink";
 import { Logo } from "@/components/ui/Logo";
 import { company, contactDetails, navItems } from "@/content/site";
 
@@ -25,8 +26,8 @@ function InstagramIcon(props: SVGProps<SVGSVGElement>) {
 }
 
 export function Footer() {
-  const { email, phone, address, linkedin, instagram } = contactDetails;
-  const showContact = Boolean(email || phone || address || linkedin || instagram);
+  const { email, phone, whatsapp, address, linkedin, instagram } = contactDetails;
+  const showContact = Boolean(email || phone || whatsapp || address || linkedin || instagram);
 
   return (
     <footer className="bg-stone text-espresso">
@@ -72,6 +73,13 @@ export function Footer() {
                   <a className="text-espresso underline-offset-4 hover:underline" href={`tel:${phone}`}>
                     {phone}
                   </a>
+                </li>
+              ) : null}
+              {whatsapp ? (
+                <li>
+                  <WhatsAppLink className="text-espresso underline-offset-4 hover:underline">
+                    {`WhatsApp ${whatsapp}`}
+                  </WhatsAppLink>
                 </li>
               ) : null}
               {address ? <li className="max-w-[28ch] text-espresso">{address}</li> : null}

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { EnquiryForm } from "@/components/contact/EnquiryForm";
+import { WhatsAppLink } from "@/components/contact/WhatsAppLink";
 import { PageHero } from "@/components/sections/PageHero";
 import { pageCopy } from "@/content/copy";
 import { contactDetails } from "@/content/site";
@@ -12,8 +13,8 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   const copy = pageCopy.contact;
-  const { email, phone, address } = contactDetails;
-  const showDetails = Boolean(email || phone || address);
+  const { email, phone, whatsapp, address } = contactDetails;
+  const showDetails = Boolean(email || phone || whatsapp || address);
 
   return (
     <>
@@ -39,6 +40,13 @@ export default function ContactPage() {
                     <a className="text-espresso underline-offset-4 hover:underline" href={`tel:${phone}`}>
                       {phone}
                     </a>
+                  </li>
+                ) : null}
+                {whatsapp ? (
+                  <li>
+                    <WhatsAppLink className="text-espresso underline-offset-4 hover:underline">
+                      {`WhatsApp ${whatsapp}`}
+                    </WhatsAppLink>
                   </li>
                 ) : null}
                 {address ? <li>{address}</li> : null}
