@@ -35,10 +35,12 @@ function present(value: string | undefined) {
   return trimmed.length > 0 ? trimmed : "";
 }
 
+const officeAddress = "401-05 GAL BUSINESS CENTER GALADARI BUILDING 16 DUBAI PRODUCTION CITY, DUBAI";
+
 export const contactDetails = {
   email: present(process.env.NEXT_PUBLIC_CONTACT_EMAIL),
   phone: present(process.env.NEXT_PUBLIC_CONTACT_PHONE),
-  address: present(process.env.NEXT_PUBLIC_CONTACT_ADDRESS),
+  address: present(process.env.NEXT_PUBLIC_CONTACT_ADDRESS) || officeAddress,
   linkedin: present(process.env.NEXT_PUBLIC_SOCIAL_LINKEDIN),
   instagram: present(process.env.NEXT_PUBLIC_SOCIAL_INSTAGRAM),
 };
